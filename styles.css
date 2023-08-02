@@ -1,0 +1,95 @@
+/* Shared CSS for all pages */
+
+/* Horizontal navigation bar style */
+.navbar {
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    height: 80px; /* Increase the height to 80px */
+    display: flex; /* Use flexbox to center the links */
+    justify-content: center; /* Horizontally center the links */
+    align-items: center; /* Vertically center the links */
+}
+
+/* Make the list items (links) horizontally displayed */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 18px; /* Increase the font size */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Content container style */
+main {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font for the main content */
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Header style */
+h1 {
+    font-size: 36px; /* Larger font size for the main heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+p {
+    font-size: 18px; /* Slightly larger font size for paragraphs */
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: #555; /* Slightly darker text color for paragraphs */
+    margin-bottom: 10px; /* Add some spacing below each paragraph */
+}
+
+/* Footer style */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute; /* Set the footer's position to absolute */
+    bottom: 0; /* Stick the footer to the bottom of the container */
+    left: 0;
+    right: 0;
+}
+
+/* Media queries for different screen sizes */
+
+/* Small screens */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 993px) {
+    /* Styles for large screens remain unchanged from the base styles */
+}
